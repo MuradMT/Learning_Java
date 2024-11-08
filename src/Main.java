@@ -103,11 +103,12 @@ public class Main {
         // endregion//region Java Exercises Month-1
        //region Java Exercises Month-1
 
-        var number=new Scanner(System.in).nextInt();
+       var number=new Scanner(System.in).nextInt();
 
         MathUtil.Task1.findby2(number);//Task-1 Solution
-        MathUtil.Task2.prime(number);//Task-2 Solution
-        
-        //endregion
+        MathUtil.Task2.prime(number);//Task-2 SolutionSolution
+
+        //endregionendregion
     }
 }
+endregion
