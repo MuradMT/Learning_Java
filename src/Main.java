@@ -107,8 +107,7 @@ public class Main {
 
         MathUtil.Task1.findby2(number);//Task-1 Solution
         MathUtil.Task2.prime(number);//Task-2 Solution
-
-
+        
         //endregion
     }
 }
