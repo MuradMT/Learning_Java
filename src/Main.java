@@ -11,7 +11,7 @@ public class Main {
         //Arithmetic %,Relational >=,Logical ||,assignment += operators
         //ASCII Table,UTF8 Encoding system,long int max capacity
         //1.Comments,variables(RAM Allocation),data types(primitive vs non primitive),
-        // type casting(downcasting,upcasting),scope
+        // type casting(downcasting,upcasting),scope//narrowing,widening in primitive types
         //2.Scanner(scanner close,next nextLine)
         //var number=new Scanner(System.in).nextInt();//shortcut of getting input with Scanner
         // and println(sout,psvm shortcuts),print,escape symbols \n ,concatenation +
