@@ -9,6 +9,7 @@ public class Main {
         //Java Byte Code<->Operating System<->CPU
         //Debugger,Step over ,Step into,Step out
         //Arithmetic %,Relational >=,Logical ||,assignment += operators
+        //ASCII Table,UTF8 Encoding system,long int max capacity
         //1.Comments,variables(RAM Allocation),data types(primitive vs non primitive),
         // type casting(downcasting,upcasting),scope
         //2.Scanner(scanner close,next nextLine)
