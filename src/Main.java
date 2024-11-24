@@ -107,8 +107,7 @@ public class Main {
 
         MathUtil.Task1.findby2(number);//Task-1 Solution
         MathUtil.Task2.prime(number);//Task-2 Solution
-
-
+        System.out.println(MathUtil.Task3.max_consecutive_ones(new int[]{1,1,0,1,1,1}));//Task-3 Solution
         //endregion
     }
 }

@@ -25,5 +25,24 @@ public class MathUtil {
             System.out.println(x?"Prime":"Not Prime");
         }
     }
+    public class Task3{
+        //Leetcode Problem
+        public static int max_consecutive_ones(int[] arr){
+                int count=0;
+                int max=0;
+                for(int i=0;i<arr.length;i++){
+                    if(arr[i]==1){
+                        count++;
+                        max=Math.max(max,count);
+                    }
+                    else{
+                        count=0;
+                    }
+                }
+                return max;
+        }
+
+    }
+
 
 }
