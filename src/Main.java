@@ -9,8 +9,9 @@ public class Main {
         //Java Byte Code<->Operating System<->CPU
         //Debugger,Step over ,Step into,Step out
         //Arithmetic %,Relational >=,Logical ||,assignment += operators
+        //ASCII Table,UTF8 Encoding system,long int max capacity
         //1.Comments,variables(RAM Allocation),data types(primitive vs non primitive),
-        // type casting(downcasting,upcasting),scope
+        // type casting(downcasting,upcasting),scope//narrowing,widening in primitive types
         //2.Scanner(scanner close,next nextLine)
         //var number=new Scanner(System.in).nextInt();//shortcut of getting input with Scanner
         // and println(sout,psvm shortcuts),print,escape symbols \n ,concatenation +
@@ -103,7 +104,7 @@ public class Main {
         // endregion//region Java Exercises Month-1
        //region Java Exercises Month-1
 
-        var number=new Scanner(System.in).nextInt();
+       var number=new Scanner(System.in).nextInt();
 
         MathUtil.Task1.findby2(number);//Task-1 Solution
         MathUtil.Task2.prime(number);//Task-2 Solution
