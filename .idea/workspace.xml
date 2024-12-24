@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a665332-5312-4987-ad21-520016e4cb64" name="Changes" comment="Finished course content of month 1.">
+    <list default="true" id="0a665332-5312-4987-ad21-520016e4cb64" name="Changes" comment="Learned about multi-dimensional,jagged arrays and String methods.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/MathUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/User.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +86,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732492588982</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Learned about multi-dimensional,jagged arrays and String methods.">
+      <option name="closed" value="true" />
+      <created>1735000222658</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1735000222658</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -100,6 +111,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Learned the fundamentals of Java SE." />
     <MESSAGE value="Finished course content of month 1." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished course content of month 1." />
+    <MESSAGE value="Learned about multi-dimensional,jagged arrays and String methods." />
+    <option name="LAST_COMMIT_MESSAGE" value="Learned about multi-dimensional,jagged arrays and String methods." />
   </component>
 </project>
