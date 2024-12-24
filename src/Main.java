@@ -1,12 +1,11 @@
 import test.*;
+
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
-    /** Month-1 Java Topics and Exercises
-     * The main method serves as the entry point for the Java application.
-     * It covers various Java topics and exercises.
-     * 
-     * Topics covered:
+    //region Month-1
+    /* Topics covered:
      * 1. Introduction to Java and IDE concepts.
      * 2. Java Byte Code, Operating System, and CPU interaction.
      * 3. Debugging techniques: Step over, Step into, Step out.
@@ -52,14 +51,69 @@ public class Main {
      * 2. Task-2: Prime number check using MathUtil.
      * 3. Task-3: Find maximum consecutive ones in an array using MathUtil.
      */
+
+    //endregion
+    //region Month-2
+    /*
+    Topics covered:
+    1.Two-dimensional array
+    Syntax of two-dimensional and jagged are the same,different from c#.
+    int[][] two_dimensional_arr=new int[2][2];
+    int[][] two_dimensional_arr={
+                 {0,1},{2,3},{4,5,6}
+        };
+    Two dimensional arrays are generally used as a matrix,row and column size are same in most cases.
+    2.Jagged Array
+    int[][]  jagged_ar=new int[2][];
+        jagged_ar[0]=new int[]{6,7,8};
+        jagged_ar[1]=new int[]{0,9};
+    System.out.println(Arrays.deepToString(jagged_arr));
+    Jagged arrays are generally used when the row and column sizes are different from each other.
+    3.Three-dimensional array
+    int[][][] arr=new int[2][2][2];
+          int[][][] arr1={
+                  {
+                          {0,1},{2,3}
+                  },
+                  {
+                          {4,5},{6,7}
+                  }
+          };
+    Three-dimensional arrays is just array of two-dimensional arrays.
+    4.Essential static and object methods of String class
+    4.1 Static methods/ String.format
+    String data=String.format("height:%.2f,weight:%d,name:%s",1.9500000000,90,"random");
+    4.2 Object methods/ lower case,upper case,length,charAt,equals
+    equalsIgnoreCase,contains,split,trim,replace,concat
+    startsWith,endsWith,indexOf,lastIndexOf,substring(and remove),isEmpty
+    compareTo-if true,returns 0
+    String text="Murad geldi";
+          System.out.println(text.toLowerCase());
+          System.out.println(text.toUpperCase());
+          System.out.println(text.length());
+          System.out.println(text.charAt(0));
+          System.out.println(text.equals("hi"));
+          System.out.println(text.equalsIgnoreCase("murad"));
+          System.out.println(text.contains("hi"));
+          var arr=text.split("");
+          System.out.println(arr[0]);
+          System.out.println(text.trim());
+          System.out.println(text.replace('r','h'));
+          System.out.println(text.concat("hi"));
+          System.out.println(text.startsWith("m"));
+          System.out.println(text.endsWith("t"));
+          System.out.println(text.indexOf("d")); // index is 4
+          System.out.println(text.lastIndexOf("d")); index is 9
+          System.out.println(text.substring(0,3));
+          System.out.println(text.substring(3));//acts as c# remove method
+          System.out.println(text.isEmpty());
+          System.out.println(text.compareTo("mm"));
+       ReplaceAll use regex
+       String text="123456 go";
+       System.out.println(text.replaceAll("[0-9]","hello"));
+     */
+    //endregion
     public static void main(String[] args) {
-       //region Java Exercises
-        var number=new Scanner(System.in).nextInt();
 
-        MathUtil.Task1.findby2(number);//Task-1 Solution
-        MathUtil.Task2.prime(number);//Task-2 Solution
-        System.out.println(MathUtil.Task3.max_consecutive_ones(new int[]{1,1,0,1,1,1}));//Task-3 Solution
-
-        //endregion
     }
 }
