@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a665332-5312-4987-ad21-520016e4cb64" name="Changes" comment="Finished exercises.">
+    <list default="true" id="0a665332-5312-4987-ad21-520016e4cb64" name="Changes" comment="Learned about class and class related topics such as static,field,object.Additionally,learned about pointer vs reference differences,JVM and RAM relationship, pointer implementation in C,essential parts of computer such as mother board,case ,power supply,cpu,ram,hard drive(solid state drive ssd and hard disk drive hdd),graphics card.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Exercises/ExerciseUtil.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +116,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735073684120</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Learned about class and class related topics such as static,field,object.Additionally,learned about pointer vs reference differences,JVM and RAM relationship, pointer implementation in C,essential parts of computer such as mother board,case ,power supply,cpu,ram,hard drive(solid state drive ssd and hard disk drive hdd),graphics card.">
+      <option name="closed" value="true" />
+      <created>1735082346391</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1735082346391</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,6 +145,7 @@
     <MESSAGE value="Started to exercises of month 2." />
     <MESSAGE value="Added missed class." />
     <MESSAGE value="Finished exercises." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished exercises." />
+    <MESSAGE value="Learned about class and class related topics such as static,field,object.Additionally,learned about pointer vs reference differences,JVM and RAM relationship, pointer implementation in C,essential parts of computer such as mother board,case ,power supply,cpu,ram,hard drive(solid state drive ssd and hard disk drive hdd),graphics card." />
+    <option name="LAST_COMMIT_MESSAGE" value="Learned about class and class related topics such as static,field,object.Additionally,learned about pointer vs reference differences,JVM and RAM relationship, pointer implementation in C,essential parts of computer such as mother board,case ,power supply,cpu,ram,hard drive(solid state drive ssd and hard disk drive hdd),graphics card." />
   </component>
 </project>
