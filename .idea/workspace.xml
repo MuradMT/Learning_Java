@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a665332-5312-4987-ad21-520016e4cb64" name="Changes" comment="Learned about class and class related topics such as static,field,object.Additionally,learned about pointer vs reference differences,JVM and RAM relationship, pointer implementation in C,essential parts of computer such as mother board,case ,power supply,cpu,ram,hard drive(solid state drive ssd and hard disk drive hdd),graphics card.">
+    <list default="true" id="0a665332-5312-4987-ad21-520016e4cb64" name="Changes" comment="Learned about Stack,Heap,Metaspace,naming rules,Reference and value types ,instance and static relationship etc.Details is mentioned in comments.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -124,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735082346391</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Learned about Stack,Heap,Metaspace,naming rules,Reference and value types ,instance and static relationship etc.Details is mentioned in comments.">
+      <option name="closed" value="true" />
+      <created>1735170659330</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1735170659330</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -146,6 +154,7 @@
     <MESSAGE value="Added missed class." />
     <MESSAGE value="Finished exercises." />
     <MESSAGE value="Learned about class and class related topics such as static,field,object.Additionally,learned about pointer vs reference differences,JVM and RAM relationship, pointer implementation in C,essential parts of computer such as mother board,case ,power supply,cpu,ram,hard drive(solid state drive ssd and hard disk drive hdd),graphics card." />
-    <option name="LAST_COMMIT_MESSAGE" value="Learned about class and class related topics such as static,field,object.Additionally,learned about pointer vs reference differences,JVM and RAM relationship, pointer implementation in C,essential parts of computer such as mother board,case ,power supply,cpu,ram,hard drive(solid state drive ssd and hard disk drive hdd),graphics card." />
+    <MESSAGE value="Learned about Stack,Heap,Metaspace,naming rules,Reference and value types ,instance and static relationship etc.Details is mentioned in comments." />
+    <option name="LAST_COMMIT_MESSAGE" value="Learned about Stack,Heap,Metaspace,naming rules,Reference and value types ,instance and static relationship etc.Details is mentioned in comments." />
   </component>
 </project>

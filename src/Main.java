@@ -2,33 +2,28 @@
 public class Main {
     /* Month-2
     Topics covered:
-    1.Class naming rules-pascal case
-    Method naming rules-camel case
-    2.Class name and file name
-    must be same if you want to use public access modifier
-    1 file can contain multiple classes
-    3.Metaspace-stores class metadata,also method information
-    4. JVM relationship with Stack-keeps values or value types
-    Heap-keeps objects or references
-    Value and Reference types.
-    5.Methods kept in stack,
-    if you do infinite recursion,then probably you wil get StackOverflow Error.
-    6.Instance members belongs to object,but
-     Static members to class
-    7.Instance and Static relationship
-    8.Sending reference to method
+    1.Garbage collector,pointer and  reference detailed explanation
+    old(orphan object) and new generation
+    2.System.gc(); class garbace collector ,but do not execute right away
+    depends on the mood of garbage collector lol
+    3.native keyword-helps us to use native code
+    such as c or c++ etc inside java via JAVA NATIVE INTERFACE
+    4.HotSpot is a type of JVM that contains JIT compiler
+    5.Compiling process(with the help of javac.exe)
+    .java file-initial java codes
+    .class file-byte code (java.exe reads byte code,like java Main runs program)
+    6.JDK JVM JRE
+    7.Linux commands- cd ls pwd vim class path
+    8.DLL-dynamic link library collection of small programs,
+    larger programs uses to do complete specific tasks
+    9.exe-executable file runs programs such as java.exe
      */
-
-    public static void main(String[] args) {
-           Student a=new Student();
-           Student b=deyish(a);
-           b.name="Sani";
+    public static void main(String[] args){
+        Student a=new Student();
+        Student b=new Student();
+        a=b;
+        System.gc();
         System.out.println(a.name);
-        System.out.println(b.name);
-    }
-
-        public static Student deyish(Student c) {
-        c.name="Nasir";
-        return c;
+        System.out.println(b);
     }
 }
