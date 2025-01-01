@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a665332-5312-4987-ad21-520016e4cb64" name="Changes" comment="Learned about Pass by value topic.">
+    <list default="true" id="0a665332-5312-4987-ad21-520016e4cb64" name="Changes" comment="Looked at static object,stack overflow example withobject initiation,object array,.getClass().getName() such as c# reflection,getter setter default versions,getter record style,setter builder pattern.&#10;Encapsulation is information,Abstraction is implementation hiding.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student.java" afterDir="false" />
@@ -149,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735345692400</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Looked at static object,stack overflow example withobject initiation,object array,.getClass().getName() such as c# reflection,getter setter default versions,getter record style,setter builder pattern.&#10;Encapsulation is information,Abstraction is implementation hiding.">
+      <option name="closed" value="true" />
+      <created>1735432328848</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1735432328848</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,6 +182,7 @@
     <MESSAGE value="Learned about Stack,Heap,Metaspace,naming rules,Reference and value types ,instance and static relationship etc.Details is mentioned in comments." />
     <MESSAGE value="Learned about Garbage Collector(System.gc()),native keyword(JNI-Java Native Interface),HotStop JVM(JIT compiler),java and class files,JDK(javac.exe),JRE(java.exe),dll and exe topics." />
     <MESSAGE value="Learned about Pass by value topic." />
-    <option name="LAST_COMMIT_MESSAGE" value="Learned about Pass by value topic." />
+    <MESSAGE value="Looked at static object,stack overflow example withobject initiation,object array,.getClass().getName() such as c# reflection,getter setter default versions,getter record style,setter builder pattern.&#10;Encapsulation is information,Abstraction is implementation hiding." />
+    <option name="LAST_COMMIT_MESSAGE" value="Looked at static object,stack overflow example withobject initiation,object array,.getClass().getName() such as c# reflection,getter setter default versions,getter record style,setter builder pattern.&#10;Encapsulation is information,Abstraction is implementation hiding." />
   </component>
 </project>

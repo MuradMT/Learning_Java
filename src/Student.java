@@ -3,6 +3,21 @@ public class Student {
       String surname;
       int age;
 
+    public Student(){
+
+    }
+    public Student(int age){
+         this.age=age;
+    }
+    public Student(int age,String name){
+         this(age);
+         this.name=name;
+    }
+    public Student(int age,String name,String surname){
+         this(age,name);
+         this.surname=surname;
+    }
+
     public String surname() {
         return surname;
     }
