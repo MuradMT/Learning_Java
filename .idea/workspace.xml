@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a665332-5312-4987-ad21-520016e4cb64" name="Changes" comment="Looked at static object,stack overflow example withobject initiation,object array,.getClass().getName() such as c# reflection,getter setter default versions,getter record style,setter builder pattern.&#10;Encapsulation is information,Abstraction is implementation hiding.">
+    <list default="true" id="0a665332-5312-4987-ad21-520016e4cb64" name="Changes" comment="Looked at pojo vs bean , object composition,ctor vs default ctor,ctor chain,this for chain ,this for calling and setting.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735432328848</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Looked at pojo vs bean , object composition,ctor vs default ctor,ctor chain,this for chain ,this for calling and setting.">
+      <option name="closed" value="true" />
+      <created>1735775907447</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1735775907447</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,6 +190,7 @@
     <MESSAGE value="Learned about Garbage Collector(System.gc()),native keyword(JNI-Java Native Interface),HotStop JVM(JIT compiler),java and class files,JDK(javac.exe),JRE(java.exe),dll and exe topics." />
     <MESSAGE value="Learned about Pass by value topic." />
     <MESSAGE value="Looked at static object,stack overflow example withobject initiation,object array,.getClass().getName() such as c# reflection,getter setter default versions,getter record style,setter builder pattern.&#10;Encapsulation is information,Abstraction is implementation hiding." />
-    <option name="LAST_COMMIT_MESSAGE" value="Looked at static object,stack overflow example withobject initiation,object array,.getClass().getName() such as c# reflection,getter setter default versions,getter record style,setter builder pattern.&#10;Encapsulation is information,Abstraction is implementation hiding." />
+    <MESSAGE value="Looked at pojo vs bean , object composition,ctor vs default ctor,ctor chain,this for chain ,this for calling and setting." />
+    <option name="LAST_COMMIT_MESSAGE" value="Looked at pojo vs bean , object composition,ctor vs default ctor,ctor chain,this for chain ,this for calling and setting." />
   </component>
 </project>
