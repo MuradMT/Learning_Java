@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Learning_Java:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a665332-5312-4987-ad21-520016e4cb64" name="Changes" comment="">
+    <list default="true" id="0a665332-5312-4987-ad21-520016e4cb64" name="Changes" comment="Looked at to type casting,string pool,equals method.Finished month 2.">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Learning_Java_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +24,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -50,7 +60,10 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -171,7 +184,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738023939074</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Looked at to type casting,string pool,equals method.Finished month 2.">
+      <option name="closed" value="true" />
+      <created>1738109488548</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1738109488548</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -199,6 +220,7 @@
     <MESSAGE value="Looked at static object,stack overflow example withobject initiation,object array,.getClass().getName() such as c# reflection,getter setter default versions,getter record style,setter builder pattern.&#10;Encapsulation is information,Abstraction is implementation hiding." />
     <MESSAGE value="Looked at pojo vs bean , object composition,ctor vs default ctor,ctor chain,this for chain ,this for calling and setting." />
     <MESSAGE value="Looked at to Method overloading,Wrapper types,boxing,unboxing,New object creation after the value of Integer 127 topics." />
-    <option name="LAST_COMMIT_MESSAGE" value="Looked at to Method overloading,Wrapper types,boxing,unboxing,New object creation after the value of Integer 127 topics." />
+    <MESSAGE value="Looked at to type casting,string pool,equals method.Finished month 2." />
+    <option name="LAST_COMMIT_MESSAGE" value="Looked at to type casting,string pool,equals method.Finished month 2." />
   </component>
 </project>
