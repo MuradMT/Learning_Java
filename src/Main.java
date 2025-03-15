@@ -1,3 +1,4 @@
+import Design_Patterns.Singleton;
 import file.FileUtility;
 
 import java.io.IOException;
@@ -23,6 +24,9 @@ public class Main {
         7.Look file notes on FileUtility
         8.Java does not allow classes inside a package to import or access types (classes, enums, interfaces)
          from the default package.
+        9.GOF-gang of four,24 essential design patterns
+        Singleton Pattern
+        10.Effective java book
      */
     //endregion
     //region Lesson-26.1,26.2,26.3,26.4,26.4,26.5,26.6,26.7
@@ -74,8 +78,11 @@ public class Main {
 //        FileUtility.writeTextToFile("I am coming for you");
 //        FileUtility.writeImageToFile();
 //        FileUtility.readTextFile();
-        FileUtility.writeObjectToFile();
-        FileUtility.readObject();
+//        FileUtility.writeObjectToFile();
+//        FileUtility.readObject();
+        Singleton s=Singleton.createInstance();
+        System.out.println(s);
+
     }
 }
 
