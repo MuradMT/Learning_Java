@@ -1,13 +1,13 @@
 package Design_Patterns;
 
-public class Singleton {
-    private Singleton(){
+public class SingletonP {
+    private SingletonP(){
 
     }
-    static Singleton s=null;
-    public static Singleton createInstance(){
+    static SingletonP s=null;
+    public static SingletonP createInstance(){
         if(s==null){
-            s=new Singleton();
+            s=new SingletonP();
         }
         return s;
     }

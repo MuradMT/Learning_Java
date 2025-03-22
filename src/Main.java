@@ -1,7 +1,5 @@
-import Design_Patterns.Singleton;
-import file.FileUtility;
-
-import java.io.IOException;
+import Design_Patterns.Pizza;
+import Design_Patterns.SingletonP;
 
 public class Main {
     //Month-4
@@ -25,8 +23,17 @@ public class Main {
         8.Java does not allow classes inside a package to import or access types (classes, enums, interfaces)
          from the default package.
         9.GOF-gang of four,24 essential design patterns
-        Singleton Pattern
+        Singleton Pattern(creational)
         10.Effective java book
+        11.String immutable
+        it is effectively immutable
+        12.Config files can implement singleton pattern
+        13.Immutable objects best for shared objects(can be implement with final keyword)
+        1.they are thread safe
+        2.State can not be changed
+        3.email delay purpose
+        in immutable we do not need synchronized things
+        14.Bilder patttern(creational)
      */
     //endregion
     //region Lesson-26.1,26.2,26.3,26.4,26.4,26.5,26.6,26.7
@@ -80,8 +87,13 @@ public class Main {
 //        FileUtility.readTextFile();
 //        FileUtility.writeObjectToFile();
 //        FileUtility.readObject();
-        Singleton s=Singleton.createInstance();
-        System.out.println(s);
+        SingletonP s= SingletonP.createInstance();
+        Pizza p= new Pizza.PizzaBuilderP()
+                .dough("some")
+                .sauce("some")
+                .topping("some")
+                .build();
+        System.out.println(p);
 
     }
 }
