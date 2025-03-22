@@ -62,7 +62,9 @@ public class Main {
         21.enum revision
      */
     //endregion
+
     //region Lesson-26.1,26.2,26.3,26.4,26.4,26.5,26.6,26.7
+        //1.Moving to files
     /*
 
      */
@@ -135,25 +137,25 @@ public class Main {
 //        Shape shape1 = shapeFactory.getShape("RECTANGLE");
 //        //call draw method of Shape Rectangle
 //        shape1.draw();
-        Date d=new Date();
-        System.out.println(d);
-        System.out.println(d.getTime());
-        //get time calculates seconds from 1970
-        SimpleDateFormat sdf=new SimpleDateFormat("dd-MM-yyyy");
-        //hh-mm-ss we can add this one also
-        //his class formats date
-        System.out.println(sdf.format(d));//hh 12 hour format HH 24 hour format
-        String dt="06-07-2003";
-        Date nd=sdf.parse(dt);
-        System.out.println(sdf.format(nd));
-
-        //Java 8 Date API
-        LocalDate ld=LocalDate.now();
-        LocalTime lt=LocalTime.now();
-        LocalDateTime ldt=LocalDateTime.of(ld,lt);
-        DateTimeFormatter dtf=DateTimeFormatter.ofPattern("dd-MM-yyyy");
-        LocalDateTime LDT= LocalDateTime.parse(dt,dtf);
-        System.out.println(LDT);
+//        Date d=new Date();
+//        System.out.println(d);
+//        System.out.println(d.getTime());
+//        //get time calculates seconds from 1970
+//        SimpleDateFormat sdf=new SimpleDateFormat("dd-MM-yyyy");
+//        //hh-mm-ss we can add this one also
+//        //his class formats date
+//        System.out.println(sdf.format(d));//hh 12 hour format HH 24 hour format
+//        String dt="06-07-2003";
+//        Date nd=sdf.parse(dt);
+//        System.out.println(sdf.format(nd));
+//
+//        //Java 8 Date API
+//        LocalDate ld=LocalDate.now();
+//        LocalTime lt=LocalTime.now();
+//        LocalDateTime ldt=LocalDateTime.of(ld,lt);
+//        DateTimeFormatter dtf=DateTimeFormatter.ofPattern("dd-MM-yyyy");
+//        LocalDateTime LDT= LocalDateTime.parse(dt,dtf);
+//        System.out.println(LDT);
     }
 }
 
