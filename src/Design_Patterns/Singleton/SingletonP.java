@@ -1,4 +1,4 @@
-package Design_Patterns;
+package Design_Patterns.Singleton;
 
 public class SingletonP {
     private SingletonP(){

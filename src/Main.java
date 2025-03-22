@@ -1,5 +1,16 @@
-import Design_Patterns.Pizza;
-import Design_Patterns.SingletonP;
+import Design_Patterns.Abstract_Factory.AbstractFactory;
+import Design_Patterns.Abstract_Factory.FactoryProducer;
+import Design_Patterns.Factory.Shape;
+import Design_Patterns.Factory.ShapeFactory;
+import Design_Patterns.Proxy.Image;
+import Design_Patterns.Proxy.ProxyImage;
+
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
 
 public class Main {
     //Month-4
@@ -24,6 +35,7 @@ public class Main {
          from the default package.
         9.GOF-gang of four,24 essential design patterns
         Singleton Pattern(creational)
+        Ensures a class has only one instance and provides a global point of access to it
         10.Effective java book
         11.String immutable
         it is effectively immutable
@@ -33,7 +45,21 @@ public class Main {
         2.State can not be changed
         3.email delay purpose
         in immutable we do not need synchronized things
-        14.Bilder patttern(creational)
+        14.Builder pattern(creational)
+        Separates the construction of a complex object from its representation
+        15.Proxy pattern structural design pattern
+        Provides a surrogate or placeholder for another object to control access to it
+        16.Factory pattern creational design pattern
+        Creates objects without specifying the exact class to create
+        17.Abstract Factory creational pattern
+        Abstract Factory patterns work around a super-factory which creates other factories.
+        This factory is also called as factory of factories.
+        18.SOLID Principles
+        19.Java dates
+        20.Sout gets object if we do not give it char string etc
+        then converts it to string
+        such as in date
+        21.enum revision
      */
     //endregion
     //region Lesson-26.1,26.2,26.3,26.4,26.4,26.5,26.6,26.7
@@ -87,14 +113,47 @@ public class Main {
 //        FileUtility.readTextFile();
 //        FileUtility.writeObjectToFile();
 //        FileUtility.readObject();
-        SingletonP s= SingletonP.createInstance();
-        Pizza p= new Pizza.PizzaBuilderP()
-                .dough("some")
-                .sauce("some")
-                .topping("some")
-                .build();
-        System.out.println(p);
+//        SingletonP s= SingletonP.createInstance();
+//        Pizza p= new Pizza.PizzaBuilderP()
+//                .dough("some")
+//                .sauce("some")
+//                .topping("some")
+//                .build();
+//        System.out.println(p);
+//        Image image = new ProxyImage("test_10mb.jpg");
+//
+//        //image will be loaded from disk
+//        image.display();
+//        System.out.println("");
+//
+//        //image will not be loaded from disk
+//        image.display();
+//        Shape shape=new ShapeFactory().getShape("CIRCLE");
+//        shape.draw();
+//        AbstractFactory shapeFactory = FactoryProducer.getFactory(false);
+//        //get an object of Shape Rectangle
+//        Shape shape1 = shapeFactory.getShape("RECTANGLE");
+//        //call draw method of Shape Rectangle
+//        shape1.draw();
+        Date d=new Date();
+        System.out.println(d);
+        System.out.println(d.getTime());
+        //get time calculates seconds from 1970
+        SimpleDateFormat sdf=new SimpleDateFormat("dd-MM-yyyy");
+        //hh-mm-ss we can add this one also
+        //his class formats date
+        System.out.println(sdf.format(d));//hh 12 hour format HH 24 hour format
+        String dt="06-07-2003";
+        Date nd=sdf.parse(dt);
+        System.out.println(sdf.format(nd));
 
+        //Java 8 Date API
+        LocalDate ld=LocalDate.now();
+        LocalTime lt=LocalTime.now();
+        LocalDateTime ldt=LocalDateTime.of(ld,lt);
+        DateTimeFormatter dtf=DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        LocalDateTime LDT= LocalDateTime.parse(dt,dtf);
+        System.out.println(LDT);
     }
 }
 

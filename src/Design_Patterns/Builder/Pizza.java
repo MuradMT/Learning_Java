@@ -1,4 +1,4 @@
-package Design_Patterns;
+package Design_Patterns.Builder;
 
 public class Pizza {
     private  String dough;
