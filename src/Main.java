@@ -1,3 +1,4 @@
+import Annotations.Test;
 import Design_Patterns.Abstract_Factory.AbstractFactory;
 import Design_Patterns.Abstract_Factory.FactoryProducer;
 import Design_Patterns.Factory.Shape;
@@ -64,9 +65,21 @@ public class Main {
     //endregion
 
     //region Lesson-26.1,26.2,26.3,26.4,26.4,26.5,26.6,26.7
-        //1.Moving to files
     /*
-
+         1.Moving to files
+         2.mkyong.com is good java source
+         3.FileOutputStream read and write,BufferedReader and BufferedWriter
+         4.git revision
+         5.Annotation is special type of interface
+         such as @Override comes from @interface
+         6.Lombok is a Java library that helps reduce boilerplate code
+         by automatically generating repetitive code such as
+         getters, setters, constructors, equals(), hashCode(), toString(),
+         and more through simple annotations.
+         examples:@Getter @Setter @ToString
+         @NoArgsConstructor @AllArgsConstructor etc
+         7.Marketplace->lombok,enable annotation processors
+         8.Reflections suggested to use only for ides,not for your personal projects
      */
     //endregion
     //region Lesson-27.1,27.2
@@ -156,6 +169,9 @@ public class Main {
 //        DateTimeFormatter dtf=DateTimeFormatter.ofPattern("dd-MM-yyyy");
 //        LocalDateTime LDT= LocalDateTime.parse(dt,dtf);
 //        System.out.println(LDT);
+        Test test=new Test();
+        test.setName("murad");
+        System.out.println(test.getName());
     }
 }
 
