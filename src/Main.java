@@ -80,6 +80,21 @@ public class Main {
          @NoArgsConstructor @AllArgsConstructor etc
          7.Marketplace->lombok,enable annotation processors
          8.Reflections suggested to use only for ides,not for your personal projects
+         9.Git extra commands revision
+         10.TortoiseGit is a free, open-source Git client for Windows
+         that provides a graphical user interface (GUI)
+          for interacting with Git repositories.
+          It integrates seamlessly with the Windows File Explorer,
+          making it very convenient for developers
+          who prefer a more visual approach to managing their Git workflows
+          rather than using the command line.
+          no mac support
+          11.We can assign tasks with issues section in group project
+          manage with projects sections
+          teams,projects,repositories,kanban
+          12.Production(master) development(releases-tasks) branches
+          13.git fetch is a Git command used to download changes from a remote repository
+          to your local repository without merging them into your local codebase.
      */
     //endregion
     //region Lesson-27.1,27.2
