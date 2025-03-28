@@ -12,13 +12,13 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class Main {
     //Month-4
 
     //Finished
-
-    //Not-Finished
 
     //region Lesson-25.1,25.2,25.3,25.4
     /*
@@ -97,8 +97,23 @@ public class Main {
           to your local repository without merging them into your local codebase.
      */
     //endregion
+
+    //Not-Finished
+
     //region Lesson-27.1,27.2
     /*
+        1.Thread implements runnable and has method run
+        2.Parallel programming is about executing multiple tasks truly simultaneously by dividing the work across multiple CPU cores.
+        3.Concurrency is about dealing with multiple tasks at the same time by switching between them (multitasking).
+        4.Runnable acts as tasks
+        5.The ExecutorService in Java is part of the java.util.concurrent package
+        and is designed to manage and control a pool of threads for executing asynchronous tasks.
+        It provides a higher-level replacement for creating and managing threads manually.
+        6.If you want to create MyThread(own class)
+        1.implement runnable->only access to run ,to start method of thread,
+        just create Thread class instance and use its start method
+        2.extend thread->access all features of thread class and directly use it
+        7.extend vs implements->extend is expensive operation,so always prefer implements
 
      */
     //endregion
@@ -184,9 +199,42 @@ public class Main {
 //        DateTimeFormatter dtf=DateTimeFormatter.ofPattern("dd-MM-yyyy");
 //        LocalDateTime LDT= LocalDateTime.parse(dt,dtf);
 //        System.out.println(LDT);
-        Test test=new Test();
-        test.setName("murad");
-        System.out.println(test.getName());
+//        Test test=new Test();
+//        test.setName("murad");
+//        System.out.println(test.getName());
+        //System.out.println(System.currentTimeMillis());
+        //System.out.println(System.nanoTime());
+        System.out.println("before:"+Thread.activeCount());
+        Runnable runnable1=new Runnable(){
+            @Override
+            public void run() {
+                for(int i=0;i<100;i++){
+                    System.out.println("Salam"+System.nanoTime());
+                }
+            }
+        };
+        Runnable runnable2=new Runnable(){
+            @Override
+            public void run() {
+                for(int i=0;i<100;i++){
+                    System.out.println("Sagol"+System.nanoTime());
+                }
+            }
+        };
+//        Thread thread1=new Thread(runnable1);
+//        Thread thread2=new Thread(runnable2);
+//
+//        thread1.start();
+//        thread2.start();
+        // Executer service helps us to do thread creating automatically
+
+
+        ExecutorService excs= Executors.newSingleThreadExecutor();
+        //Executors.newFixedThreadPool(2); creates fixed thread pool
+        excs.submit(runnable1);
+        excs.submit(runnable2);
+
+        System.out.println("after:"+Thread.activeCount());
     }
 }
 
