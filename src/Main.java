@@ -12,8 +12,11 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
+import java.util.Timer;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Main {
     //Month-4
@@ -115,6 +118,12 @@ public class Main {
         2.extend thread->access all features of thread class and directly use it
         7.extend vs implements->extend is expensive operation,so always prefer implements
 
+
+        8.Race condition-two tasks works in multiple threads and updates things wrong
+        9.Volatile,synchronized
+        10.AtomicInteger works with native c++,so it performs fast
+        10.Thread Safe->with volatile+synchronized or AtomicInteger helps us
+        to ensure safety of threads
      */
     //endregion
     //region Lesson-28.1,28.2,28.3
@@ -152,6 +161,18 @@ public class Main {
 //        }
 //        System.out.println(Numbers.valueOf("Positive").text);
 //    }
+    private volatile static int num=0;
+    //volatile helps us to create singularity,
+    //every core gets value from central position
+    //The volatile keyword in Java is used to indicate
+    //that a variable’s value may be changed by multiple threads,
+    //update guarantee,atomicity not guarantee
+
+    public synchronized static void increase(){
+        num++;
+    }
+
+    public static AtomicInteger ai=new AtomicInteger();
     public static void main(String[] args) throws Exception {
 //        FileUtility.writeTextToFile("I am coming for you");
 //        FileUtility.writeImageToFile();
@@ -209,7 +230,9 @@ public class Main {
             @Override
             public void run() {
                 for(int i=0;i<100;i++){
-                    System.out.println("Salam"+System.nanoTime());
+                    //num++; simple increase creates race condition
+                    //increase();
+                    ai.incrementAndGet();
                 }
             }
         };
@@ -217,7 +240,9 @@ public class Main {
             @Override
             public void run() {
                 for(int i=0;i<100;i++){
-                    System.out.println("Sagol"+System.nanoTime());
+                    //num++;
+                    //increase();
+                    ai.incrementAndGet();
                 }
             }
         };
@@ -229,12 +254,16 @@ public class Main {
         // Executer service helps us to do thread creating automatically
 
 
-        ExecutorService excs= Executors.newSingleThreadExecutor();
-        //Executors.newFixedThreadPool(2); creates fixed thread pool
+        //ExecutorService excs= Executors.newSingleThreadExecutor();
+        ExecutorService excs=Executors.newFixedThreadPool(2); //creates fixed thread pool
         excs.submit(runnable1);
         excs.submit(runnable2);
 
+        excs.shutdown();
+        excs.awaitTermination(1, TimeUnit.DAYS);
+
         System.out.println("after:"+Thread.activeCount());
+        System.out.println(System.nanoTime());
     }
 }
 
