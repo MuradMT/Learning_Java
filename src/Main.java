@@ -5,12 +5,14 @@ import Design_Patterns.Factory.Shape;
 import Design_Patterns.Factory.ShapeFactory;
 import Design_Patterns.Proxy.Image;
 import Design_Patterns.Proxy.ProxyImage;
+import Threads_File_Practise.FileWriter;
 
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.Timer;
 import java.util.concurrent.ExecutorService;
@@ -124,7 +126,46 @@ public class Main {
         10.AtomicInteger works with native c++,so it performs fast
         10.Thread Safe->with volatile+synchronized or AtomicInteger helps us
         to ensure safety of threads
-     */
+        11.In Java, a monitor lock (or intrinsic lock) is a synchronization mechanism
+         that allows only one thread at a time to execute a block of code or a method
+          that is marked as synchronized.
+         Every object in Java has an associated monitor lock.
+          Synchronized block with custom lock object:
+         private final Object lock = new Object();
+
+         public void myMethod() {
+           synchronized (lock) {-locks method
+        // critical section
+       }
+       }
+       synchronized(this)-locks object
+       synchronized(Some.class)-locks class
+       12.A deadlock occurs when two or more threads are blocked forever,
+       each waiting for the other to release a lock.
+
+        ⸻
+
+        How does it happen?
+
+        A typical scenario:
+            1.	Thread 1 acquires Lock A and waits for Lock B.
+            2.	Thread 2 acquires Lock B and waits for Lock A.
+         13.avoid deadlock->avoid nested or unnecessary locks
+         14.Method
+        Who uses it?
+        What it does
+        join()
+        Thread
+        Waits for another thread to finish.
+        wait()
+        Thread
+        Waits & releases lock on an object.
+        notify()
+        Thread
+        Wakes up one waiting thread.
+
+             */
+
     //endregion
     //region Lesson-28.1,28.2,28.3
     /*
@@ -225,27 +266,27 @@ public class Main {
 //        System.out.println(test.getName());
         //System.out.println(System.currentTimeMillis());
         //System.out.println(System.nanoTime());
-        System.out.println("before:"+Thread.activeCount());
-        Runnable runnable1=new Runnable(){
-            @Override
-            public void run() {
-                for(int i=0;i<100;i++){
-                    //num++; simple increase creates race condition
-                    //increase();
-                    ai.incrementAndGet();
-                }
-            }
-        };
-        Runnable runnable2=new Runnable(){
-            @Override
-            public void run() {
-                for(int i=0;i<100;i++){
-                    //num++;
-                    //increase();
-                    ai.incrementAndGet();
-                }
-            }
-        };
+//        System.out.println("before:"+Thread.activeCount());
+//        Runnable runnable1=new Runnable(){
+//            @Override
+//            public void run() {
+//                for(int i=0;i<100;i++){
+//                    //num++; simple increase creates race condition
+//                    //increase();
+//                    ai.incrementAndGet();
+//                }
+//            }
+//        };
+//        Runnable runnable2=new Runnable(){
+//            @Override
+//            public void run() {
+//                for(int i=0;i<100;i++){
+//                    //num++;
+//                    //increase();
+//                    ai.incrementAndGet();
+//                }
+//            }
+//        };
 //        Thread thread1=new Thread(runnable1);
 //        Thread thread2=new Thread(runnable2);
 //
@@ -255,15 +296,22 @@ public class Main {
 
 
         //ExecutorService excs= Executors.newSingleThreadExecutor();
-        ExecutorService excs=Executors.newFixedThreadPool(2); //creates fixed thread pool
-        excs.submit(runnable1);
-        excs.submit(runnable2);
-
-        excs.shutdown();
-        excs.awaitTermination(1, TimeUnit.DAYS);
-
-        System.out.println("after:"+Thread.activeCount());
-        System.out.println(System.nanoTime());
+//        ExecutorService excs=Executors.newFixedThreadPool(2); //creates fixed thread pool
+//        excs.submit(runnable1);
+//        excs.submit(runnable2);
+//
+//        excs.shutdown();
+//        excs.awaitTermination(1, TimeUnit.DAYS);
+//
+//        System.out.println("after:"+Thread.activeCount());
+//        System.out.println(System.nanoTime());
+        FileWriter fw1=new FileWriter("Salam","myfile.txt", FileWriter.Write_Type.IO,100);
+        FileWriter fw2=new FileWriter("Salam1","myfile.txt", FileWriter.Write_Type.NIO,100);
+        ExecutorService exc=Executors.newFixedThreadPool(2);
+        exc.submit(fw1);
+        exc.submit(fw2);
+        exc.shutdown();
+        exc.awaitTermination(1,TimeUnit.MINUTES);
     }
 }
 

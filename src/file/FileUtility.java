@@ -8,8 +8,8 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 
 public class FileUtility {
-    public static void writeTextToFile(String message) throws IOException {
-        Path path = Paths.get("myfile.txt");
+    public static void writeTextToFile(String message,String filename) throws IOException {
+        Path path = Paths.get(filename);
         try {
             //First step
             Files.write(path, message.getBytes(StandardCharsets.UTF_8), StandardOpenOption.CREATE_NEW);
