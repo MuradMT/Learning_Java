@@ -188,6 +188,21 @@ public class Main {
         3.executor service has method invokeAny,calls random callables send to executor service
         then invokes all and returns the first thread that finished
         4.invokeAll returns the list of futures object
+
+        5.TCP-Transmission control protocol UDP PROTOCOLS
+        udp allows us package breaking,used in live streaming,
+        do not check each package
+        6.IPV4 IPV6
+        7.NETWORK,LOCAL VS GLOBAL IP
+        8.HOW OPERATORS WORK,HOW WE CONNECT THEM
+        9.We  connect via ports after ip,handshake technique,domain
+        10.tcp divides whole bytes to small packages and checks each package
+        11.CheckSum-hashed version of data with md5 sha256 etc algorithms
+        12.Package has data and header parts
+        13.Other protocols http,smtp are child of tcp ,ping
+        smpp-short message peer to peer,useful sending sms
+        bind_resp unbind send alive
+        14.http default port:80 https:443 client server
      */
     //endregion
     //region Lesson-30.1,30.2
@@ -215,19 +230,19 @@ public class Main {
 //        }
 //        System.out.println(Numbers.valueOf("Positive").text);
 //    }
-    private volatile static int num=0;
-    //volatile helps us to create singularity,
-    //every core gets value from central position
-    //The volatile keyword in Java is used to indicate
-    //that a variable’s value may be changed by multiple threads,
-    //update guarantee,atomicity not guarantee
-
-    public synchronized static void increase(){
-        num++;
-    }
-
-    public static AtomicInteger ai=new AtomicInteger();
-    public static void main(String[] args) throws Exception {
+//    private volatile static int num=0;
+//    //volatile helps us to create singularity,
+//    //every core gets value from central position
+//    //The volatile keyword in Java is used to indicate
+//    //that a variable’s value may be changed by multiple threads,
+//    //update guarantee,atomicity not guarantee
+//
+//    public synchronized static void increase(){
+//        num++;
+//    }
+//
+//    public static AtomicInteger ai=new AtomicInteger();
+    public static void main(String[] args)  {
 //        FileUtility.writeTextToFile("I am coming for you");
 //        FileUtility.writeImageToFile();
 //        FileUtility.readTextFile();
@@ -318,15 +333,14 @@ public class Main {
 //
 //        System.out.println("after:"+Thread.activeCount());
 //        System.out.println(System.nanoTime());
-        FileWriter fw1=new FileWriter("Salam","myfile.txt", FileWriter.Write_Type.IO,100);
-        FileWriter fw2=new FileWriter("Salam1","myfile.txt", FileWriter.Write_Type.NIO,100);
-        ExecutorService exc=Executors.newFixedThreadPool(2);
-
-        exc.submit(fw1);
-        exc.submit(fw2);
-        exc.shutdown();
-        exc.awaitTermination(1,TimeUnit.MINUTES);
-
+//        FileWriter fw1=new FileWriter("Salam","myfile.txt", FileWriter.Write_Type.IO,100);
+//        FileWriter fw2=new FileWriter("Salam1","myfile.txt", FileWriter.Write_Type.NIO,100);
+//        ExecutorService exc=Executors.newFixedThreadPool(2);
+//
+//        exc.submit(fw1);
+//        exc.submit(fw2);
+//        exc.shutdown();
+//        exc.awaitTermination(1,TimeUnit.MINUTES);
 
     }
 }
