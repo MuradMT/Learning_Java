@@ -17,6 +17,7 @@ import java.util.Date;
 import java.util.Timer;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -178,7 +179,15 @@ public class Main {
 
     //region Lesson-29.1,29.2,29.3
     /*
-
+          1.scheduled executor service
+           ScheduledExecutorService ex=Executors.newScheduledThreadPool(2);
+        ex.schedule(fw1,1,TimeUnit.HOURS);
+        2.We send callable(has call method) inside executorservice submit method
+        then it returns Future object,then we just use
+         submit(submit is just a variable name).get to get value of this object
+        3.executor service has method invokeAny,calls random callables send to executor service
+        then invokes all and returns the first thread that finished
+        4.invokeAll returns the list of futures object
      */
     //endregion
     //region Lesson-30.1,30.2
@@ -312,10 +321,13 @@ public class Main {
         FileWriter fw1=new FileWriter("Salam","myfile.txt", FileWriter.Write_Type.IO,100);
         FileWriter fw2=new FileWriter("Salam1","myfile.txt", FileWriter.Write_Type.NIO,100);
         ExecutorService exc=Executors.newFixedThreadPool(2);
+
         exc.submit(fw1);
         exc.submit(fw2);
         exc.shutdown();
         exc.awaitTermination(1,TimeUnit.MINUTES);
+
+
     }
 }
 
