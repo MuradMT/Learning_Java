@@ -9,12 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a665332-5312-4987-ad21-520016e4cb64" name="Changes" comment="All files used during month 3.">
+    <list default="true" id="0a665332-5312-4987-ad21-520016e4cb64" name="Changes" comment="Learned about monitor lock,deadlock,join,wait,notify.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Learning_Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Learning_Java.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myfile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myfile.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/file/FileUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/file/FileUtility.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +215,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740097531527</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Learned about monitor lock,deadlock,join,wait,notify.">
+      <option name="closed" value="true" />
+      <created>1748819043034</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1748819043034</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -249,6 +254,7 @@
     <MESSAGE value="Looked at to type casting,string pool,equals method.Finished month 2." />
     <MESSAGE value="Finished month 3.Topics are stringBuilder vs stringBuffer,build tools ant maven gradle jar,oop,final keyword,@override,instanceof,access modifiers,this and super keywords,unnamed class,sealed+permits or final keywords to block inheritance,inner vs nested class,class.forName,interfaces,default extend implements keywords,try catch finally,exception error throwable runtime exception,throw vs throws,checked vs unchecked exceptions and so on." />
     <MESSAGE value="All files used during month 3." />
-    <option name="LAST_COMMIT_MESSAGE" value="All files used during month 3." />
+    <MESSAGE value="Learned about monitor lock,deadlock,join,wait,notify." />
+    <option name="LAST_COMMIT_MESSAGE" value="Learned about monitor lock,deadlock,join,wait,notify." />
   </component>
 </project>

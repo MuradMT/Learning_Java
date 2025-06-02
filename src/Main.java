@@ -103,7 +103,6 @@ public class Main {
      */
     //endregion
 
-    //Not-Finished
 
     //region Lesson-27.1,27.2
     /*
@@ -120,6 +119,11 @@ public class Main {
         2.extend thread->access all features of thread class and directly use it
         7.extend vs implements->extend is expensive operation,so always prefer implements
 
+             */
+
+    //endregion
+    //region Lesson-28.1,28.2,28.3
+    /*
 
         8.Race condition-two tasks works in multiple threads and updates things wrong
         9.Volatile,synchronized
@@ -157,21 +161,21 @@ public class Main {
         join()
         Thread
         Waits for another thread to finish.
+        Helps as to synchronously process threads,not asynchronously
         wait()
         Thread
         Waits & releases lock on an object.
         notify()
         Thread
         Wakes up one waiting thread.
-
-             */
-
-    //endregion
-    //region Lesson-28.1,28.2,28.3
-    /*
-
+        15.ReentrantLock is lock mechanism such as monitor,
+        but reentrant lock allows us to use lock and unlock methods
+        16.Thread.sleep()-waits a few seconds thread,1000 ms is 1 second
      */
     //endregion
+
+    //Not-Finished
+
     //region Lesson-29.1,29.2,29.3
     /*
 
