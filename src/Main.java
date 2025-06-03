@@ -12,10 +12,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.Timer;
+import java.util.*;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -239,6 +236,12 @@ public class Main {
           4.Shifting operators
           System.out.println(10>>1);-divides 10 1 time to 2,result 5
           System.out.println(10<<2);-multiplies 10 with 2 2 times,result 40
+          How transistors work
+          5.Base thing is Collection interface extends iterable
+          it has set ,list,queue etc
+          Collection<String> cls=new HashSet<>();
+          List<Integer> mls=new ArrayList<>();
+          6.Collection types arraylist linkedlist hashset
      */
     //endregion
 
@@ -373,7 +376,8 @@ public class Main {
 //      GenericClass<? extends String,? super Integer> cls=new GenericClass<>(hi);
 //      //second ? is Number type
 //      String result=GenericClass.<String>print(hi);
-        ArrayList arl=new ArrayList();
+        Collection<Integer> arl=new ArrayList<>();
+        Collection<Integer> als=new LinkedList<>();
         arl.add(1);
         arl.add(2);
 
@@ -384,6 +388,9 @@ public class Main {
 
         System.out.println(10>>1);
         System.out.println(10<<2);
+
+        Collection<String> cls=new HashSet<>();
+        List<Integer> mls=new ArrayList<>();
     }
 }
 
