@@ -12,6 +12,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.Timer;
@@ -69,7 +70,6 @@ public class Main {
         21.enum revision
      */
     //endregion
-
     //region Lesson-26.1,26.2,26.3,26.4,26.4,26.5,26.6,26.7
     /*
          1.Moving to files
@@ -103,8 +103,6 @@ public class Main {
           to your local repository without merging them into your local codebase.
      */
     //endregion
-
-
     //region Lesson-27.1,27.2
     /*
         1.Thread implements runnable and has method run
@@ -174,9 +172,6 @@ public class Main {
         16.Thread.sleep()-waits a few seconds thread,1000 ms is 1 second
      */
     //endregion
-
-    //Not-Finished
-
     //region Lesson-29.1,29.2,29.3
     /*
           1.scheduled executor service
@@ -204,7 +199,12 @@ public class Main {
         bind_resp unbind send alive
         14.http default port:80 https:443 client server
 
-        15.Generics ,type safety
+
+     */
+    //endregion
+    //region Lesson-30.1,30.2
+    /*
+         15.Generics ,type safety
         16.diamond operator <>
         17.T extends A & B -bounded type parameter
         18.Type erasure-converts generics syntax on compile time
@@ -224,16 +224,25 @@ public class Main {
 
      */
     //endregion
-    //region Lesson-30.1,30.2
-    /*
 
-     */
-    //endregion
+    //Not-Finished
+
+
     //region Lesson-31.1,31.2,31.3,31.4
     /*
-
+          1.Collections-Arraylist
+          ArrayList is just simple array in background
+          2.Bitwise operators & | difference from && ||
+          3.Flags-> sending 8 bites with true and false
+          1001001-for instance we say has width and width position is 0
+          so 1 number can tell us essential information
+          4.Shifting operators
+          System.out.println(10>>1);-divides 10 1 time to 2,result 5
+          System.out.println(10<<2);-multiplies 10 with 2 2 times,result 40
      */
     //endregion
+
+
     //region Lesson-32.1,32.2
     /*
 
@@ -360,10 +369,21 @@ public class Main {
 //        exc.submit(fw2);
 //        exc.shutdown();
 //        exc.awaitTermination(1,TimeUnit.MINUTES);
-        String hi="hello";
-      GenericClass<? extends String,? super Integer> cls=new GenericClass<>(hi);
-      //second ? is Number type
-      String result=GenericClass.<String>print(hi);
+//        String hi="hello";
+//      GenericClass<? extends String,? super Integer> cls=new GenericClass<>(hi);
+//      //second ? is Number type
+//      String result=GenericClass.<String>print(hi);
+        ArrayList arl=new ArrayList();
+        arl.add(1);
+        arl.add(2);
+
+        MyArray<Integer> marr=new MyArray<>();
+        marr.add(8);
+        marr.add(9);
+        System.out.println(marr.get(0));
+
+        System.out.println(10>>1);
+        System.out.println(10<<2);
     }
 }
 
