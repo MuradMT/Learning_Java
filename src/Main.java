@@ -203,6 +203,25 @@ public class Main {
         smpp-short message peer to peer,useful sending sms
         bind_resp unbind send alive
         14.http default port:80 https:443 client server
+
+        15.Generics ,type safety
+        16.diamond operator <>
+        17.T extends A & B -bounded type parameter
+        18.Type erasure-converts generics syntax on compile time
+        19.MyClass<T,U extends Integer> extends MyGeneric<T,U>
+        20.When we extend other class we can send direct type
+        MyClass<T,U extends Integer> extends MyGeneric<String,Integer>
+        21.Generics in methods
+        public static <A extends String> void print(A parameter){
+        System.out.println(parameter);}
+        22.Generic type defining  of method parameter
+        String result=GenericClass.<String>print(hi);
+        syntax is a little bit different in java
+        23.wildcards ?,upper bound extends,lower bound super
+        ? extends A -> ? is subclass of A
+        ? super B-> ? is superClass of B
+        ?-just unbound
+
      */
     //endregion
     //region Lesson-30.1,30.2
@@ -341,7 +360,10 @@ public class Main {
 //        exc.submit(fw2);
 //        exc.shutdown();
 //        exc.awaitTermination(1,TimeUnit.MINUTES);
-
+        String hi="hello";
+      GenericClass<? extends String,? super Integer> cls=new GenericClass<>(hi);
+      //second ? is Number type
+      String result=GenericClass.<String>print(hi);
     }
 }
 
