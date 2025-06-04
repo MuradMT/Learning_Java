@@ -242,6 +242,7 @@ public class Main {
           Collection<String> cls=new HashSet<>();
           List<Integer> mls=new ArrayList<>();
           6.Collection types arraylist linkedlist hashset
+          7.Linkedlist best for delete,arraylist for get
      */
     //endregion
 
@@ -376,21 +377,26 @@ public class Main {
 //      GenericClass<? extends String,? super Integer> cls=new GenericClass<>(hi);
 //      //second ? is Number type
 //      String result=GenericClass.<String>print(hi);
-        Collection<Integer> arl=new ArrayList<>();
-        Collection<Integer> als=new LinkedList<>();
-        arl.add(1);
-        arl.add(2);
-
-        MyArray<Integer> marr=new MyArray<>();
-        marr.add(8);
-        marr.add(9);
-        System.out.println(marr.get(0));
-
-        System.out.println(10>>1);
-        System.out.println(10<<2);
-
-        Collection<String> cls=new HashSet<>();
-        List<Integer> mls=new ArrayList<>();
+//        Collection<Integer> arl=new ArrayList<>();
+//        Collection<Integer> als=new LinkedList<>();
+//        arl.add(1);
+//        arl.add(2);
+//
+//        MyArray<Integer> marr=new MyArray<>();
+//        marr.add(8);
+//        marr.add(9);
+//        System.out.println(marr.get(0));
+//
+//        System.out.println(10>>1);
+//        System.out.println(10<<2);
+//
+//        Collection<String> cls=new HashSet<>();
+//        List<Integer> mls=new ArrayList<>();
+            MyLinkedList<Integer> mll=new MyLinkedList<>();
+            mll.add(1);
+            mll.add(2);
+            mll.add(3);
+            System.out.println(mll.printList());
     }
 }
 
