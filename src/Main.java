@@ -243,6 +243,16 @@ public class Main {
           List<Integer> mls=new ArrayList<>();
           6.Collection types arraylist linkedlist hashset
           7.Linkedlist best for delete,arraylist for get
+          8.Vector is synchronized Arraylist,it is thread safe
+          9.Collections.synchronizedList()-creates new synchronized list
+          10.Whole architecture:
+          Collection implements Iterable has 3 interfaces:
+          List interface-ArrayList LinkedList Vector
+          Set interface-Hashset
+          Queue Interface
+          11.Foreach loop implements iterable and
+           use iterator so we can access elements easily
+
      */
     //endregion
 
@@ -392,21 +402,30 @@ public class Main {
 //
 //        Collection<String> cls=new HashSet<>();
 //        List<Integer> mls=new ArrayList<>();
-            MyLinkedList<Integer> mll=new MyLinkedList<>();
-            mll.add(1);
-            mll.add(2);
-            mll.add(3);
-            System.out.println(mll.printList());
-            mll.reverseLinkedList();
-        System.out.println(mll.printList());
-//            List<Integer> mnll=new LinkedList<>();
-//            mnll.add(1);
-//            mnll.add(2);
-//            mnll.add(3);
+//            MyLinkedList<Integer> mll=new MyLinkedList<>();
+//            mll.add(1);
+//            mll.add(2);
+//            mll.add(3);
+//            System.out.println(mll.printList());
+//            mll.reverseLinkedList();
+//        System.out.println(mll.printList());
+            List<Integer> mnll=new LinkedList<>();
+            mnll.add(1);
+            mnll.add(2);
+            mnll.add(3);
 //            for(int item:mnll){
 //                System.out.println(item);
 //            }
+//            List<Integer> narl=new ArrayList<>(mnll);
+//        System.out.println(narl.get(0));
 //        System.out.println(mnll);
+        List<Integer> mvc=new Vector<>();
+        List<Integer> mysynchronizedlist=Collections.synchronizedList(mnll);
+        Iterator<Integer> iter=mnll.iterator();
+        while(iter.hasNext()){
+            int value=iter.next();
+            System.out.println(value);
+        }
     }
 }
 
