@@ -61,4 +61,19 @@ public class MyLinkedList<T> {
         }
     }
 
+    public void reverseLinkedList(){
+        //1-2-3
+        Node<T> current=head;
+        Node<T> temp=null;
+        while(current!=null){
+            temp=current.next;
+            current.next=current.prev;
+            current.prev=temp;
+            current=temp;
+        }
+        Node<T> tempHead = head;
+        head = tail;
+        tail = tempHead;
+    }
+
 }

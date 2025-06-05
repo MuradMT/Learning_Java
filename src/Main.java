@@ -397,6 +397,16 @@ public class Main {
             mll.add(2);
             mll.add(3);
             System.out.println(mll.printList());
+            mll.reverseLinkedList();
+        System.out.println(mll.printList());
+//            List<Integer> mnll=new LinkedList<>();
+//            mnll.add(1);
+//            mnll.add(2);
+//            mnll.add(3);
+//            for(int item:mnll){
+//                System.out.println(item);
+//            }
+//        System.out.println(mnll);
     }
 }
 
