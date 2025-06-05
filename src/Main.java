@@ -253,6 +253,16 @@ public class Main {
           11.Foreach loop implements iterable and
            use iterator so we can access elements easily
 
+         JavaFx or Swing helps us to build desktop apps.
+         JavaFx is modern but uses declarative paradigm.
+         Desktop app with swing notes:
+         1.JPanel form and JFrame form,initComponents
+         2.Design-palette
+         3.In Source we get new name for design elements
+         4.layout,getcontentpane
+         5.design properties
+
+
      */
     //endregion
 
