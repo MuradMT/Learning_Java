@@ -278,6 +278,13 @@ public class Main {
          6.time and space complexity
          7.equals and hashcode should be override together
          8.Collections.synchronizedMap()->creates synchronized map
+
+         9.Comparable interface has compare to method
+         10.Treemap is a sorted map type
+         11.Set,Hahset,Treeset is sorted set type
+         12.Comparator creates a new comparison and then we use it with
+         sort method
+         13.Treemap and treeset uses Red Black tree under the hood
      */
     //endregion
 
@@ -445,8 +452,29 @@ public class Main {
 //            System.out.println(value);
 //        }
         Map<Integer,String> dct=new HashMap<>();
+        dct.put(3,"m");
+        dct.put(1,"n");
+        dct.put(35,"p");
         dct.put(0,"Murad");
+        for(int item:dct.keySet()){
+            System.out.println(item);
+        }
         System.out.println(dct.get(0));
+        Map<Integer,String> mysm=new TreeMap<>();
+        mysm.put(3,"m");
+        mysm.put(1,"n");
+        mysm.put(35,"p");
+        System.out.println(mysm.get(1));
+        for(int item:mysm.keySet()){
+            System.out.println(item);
+        }
+
+        Set<Integer> myset=new HashSet<>();
+        myset.add(5556);
+        for(int item:myset){
+            System.out.println(item);
+        }
+        System.out.println(myset.size());
     }
 }
 
