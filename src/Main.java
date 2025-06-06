@@ -220,11 +220,7 @@ public class Main {
         ?-just unbound
 
      */
-    //endregion
-
-    //Not-Finished
-
-
+    //endregionx
     //region Lesson-31.1,31.2,31.3,31.4
     /*
           1.Collections-Arraylist
@@ -266,10 +262,22 @@ public class Main {
      */
     //endregion
 
+    //Not-Finished
+
 
     //region Lesson-32.1,32.2
     /*
-
+         1.Map is general again,we have hashmap and hashtable
+         that implement this map,same logic as list
+         2.Map technically is not a collection cuz does not implement
+         Collection class,but is a ds
+         3.Hashtable is synchronized hash map
+         backward compatibility,past version works well in new ones
+         4.In background of map we have Node<K,V> and hashing
+         5.we have 16 nodes generally
+         6.time and space complexity
+         7.equals and hashcode should be override together
+         8.Collections.synchronizedMap()->creates synchronized map
      */
     //endregion
 
@@ -419,23 +427,26 @@ public class Main {
 //            System.out.println(mll.printList());
 //            mll.reverseLinkedList();
 //        System.out.println(mll.printList());
-            List<Integer> mnll=new LinkedList<>();
-            mnll.add(1);
-            mnll.add(2);
-            mnll.add(3);
+//            List<Integer> mnll=new LinkedList<>();
+//            mnll.add(1);
+//            mnll.add(2);
+//            mnll.add(3);
 //            for(int item:mnll){
 //                System.out.println(item);
 //            }
 //            List<Integer> narl=new ArrayList<>(mnll);
 //        System.out.println(narl.get(0));
 //        System.out.println(mnll);
-        List<Integer> mvc=new Vector<>();
-        List<Integer> mysynchronizedlist=Collections.synchronizedList(mnll);
-        Iterator<Integer> iter=mnll.iterator();
-        while(iter.hasNext()){
-            int value=iter.next();
-            System.out.println(value);
-        }
+//        List<Integer> mvc=new Vector<>();
+//        List<Integer> mysynchronizedlist=Collections.synchronizedList(mnll);
+//        Iterator<Integer> iter=mnll.iterator();
+//        while(iter.hasNext()){
+//            int value=iter.next();
+//            System.out.println(value);
+//        }
+        Map<Integer,String> dct=new HashMap<>();
+        dct.put(0,"Murad");
+        System.out.println(dct.get(0));
     }
 }
 

@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a665332-5312-4987-ad21-520016e4cb64" name="Changes" comment="Implemented reverse linked list feature.">
+    <list default="true" id="0a665332-5312-4987-ad21-520016e4cb64" name="Changes" comment="Learned about basic concepts how to develop destkop apps with Swing or JavaFX.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -287,7 +287,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749122237464</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Learned about Synchronized lists such as Vector or Collections.synchronizedList(),whole general architecture of collection and iterable-iterator.">
+      <option name="closed" value="true" />
+      <created>1749140546793</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1749140546793</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Learned about basic concepts how to develop destkop apps with Swing or JavaFX.">
+      <option name="closed" value="true" />
+      <created>1749144168568</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1749144168568</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -312,8 +328,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Learned the fundamentals of Java SE." />
-    <MESSAGE value="Finished course content of month 1." />
     <MESSAGE value="Learned about multi-dimensional,jagged arrays and String methods." />
     <MESSAGE value="Started to exercises of month 2." />
     <MESSAGE value="Added missed class." />
@@ -337,6 +351,8 @@
     <MESSAGE value="Learned about how transistors work,collections architecture,main collections such as lists queues sets." />
     <MESSAGE value="Implemented fully custom Linked List with add,remove and printAll functionalities." />
     <MESSAGE value="Implemented reverse linked list feature." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented reverse linked list feature." />
+    <MESSAGE value="Learned about Synchronized lists such as Vector or Collections.synchronizedList(),whole general architecture of collection and iterable-iterator." />
+    <MESSAGE value="Learned about basic concepts how to develop destkop apps with Swing or JavaFX." />
+    <option name="LAST_COMMIT_MESSAGE" value="Learned about basic concepts how to develop destkop apps with Swing or JavaFX." />
   </component>
 </project>
