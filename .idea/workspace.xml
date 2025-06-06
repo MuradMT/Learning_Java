@@ -9,10 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a665332-5312-4987-ad21-520016e4cb64" name="Changes" comment="Learned about Map(HahMap,Hashtable),Collections.SynchronizedMap.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="0a665332-5312-4987-ad21-520016e4cb64" name="Changes" comment="Learned about TreeMap(SortedMap,),Set,HashSet,TreeSet(Red-Black tree under the hood),comparable and comparator." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -312,7 +309,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749228343004</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Learned about TreeMap(SortedMap,),Set,HashSet,TreeSet(Red-Black tree under the hood),comparable and comparator.">
+      <option name="closed" value="true" />
+      <created>1749251572701</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1749251572701</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -337,7 +342,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Started to exercises of month 2." />
     <MESSAGE value="Added missed class." />
     <MESSAGE value="Finished exercises." />
     <MESSAGE value="Learned about class and class related topics such as static,field,object.Additionally,learned about pointer vs reference differences,JVM and RAM relationship, pointer implementation in C,essential parts of computer such as mother board,case ,power supply,cpu,ram,hard drive(solid state drive ssd and hard disk drive hdd),graphics card." />
@@ -362,6 +366,7 @@
     <MESSAGE value="Learned about Synchronized lists such as Vector or Collections.synchronizedList(),whole general architecture of collection and iterable-iterator." />
     <MESSAGE value="Learned about basic concepts how to develop destkop apps with Swing or JavaFX." />
     <MESSAGE value="Learned about Map(HahMap,Hashtable),Collections.SynchronizedMap." />
-    <option name="LAST_COMMIT_MESSAGE" value="Learned about Map(HahMap,Hashtable),Collections.SynchronizedMap." />
+    <MESSAGE value="Learned about TreeMap(SortedMap,),Set,HashSet,TreeSet(Red-Black tree under the hood),comparable and comparator." />
+    <option name="LAST_COMMIT_MESSAGE" value="Learned about TreeMap(SortedMap,),Set,HashSet,TreeSet(Red-Black tree under the hood),comparable and comparator." />
   </component>
 </project>
