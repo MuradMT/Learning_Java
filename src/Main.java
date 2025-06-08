@@ -18,10 +18,25 @@ public class Main {
 
     //Not-Finished
 
-
+    //region Lesson-33(1,2,3,4)
+    /*
+         1.Stack LIFO
+     */
+    //endregion
 
     public static void main(String[] args)  {
-
+        Stack<Integer> mystack=new Stack<>();
+        mystack.push(1);
+        mystack.push(17);
+        mystack.push(14);
+        mystack.push(19);
+        mystack.push(10);
+        System.out.println(mystack.pop());
+        System.out.println(mystack.peek());
     }
+
+
+
 }
+
 
