@@ -23,49 +23,69 @@ public class Main {
          offerFirst or Last,poll and peek also
          4.Blocking queue works in publisher-subscriber principle
          locks threads
+         5.Priority Queue is based on prorities
      */
     //endregion
 
     public static void main(String[] args)  {
-        Stack<Integer> mystack=new Stack<>();
-        mystack.push(1);
-        mystack.push(17);
-        mystack.push(14);
-        mystack.push(19);
-        mystack.push(10);
-        System.out.println(mystack.pop());
-        System.out.println(mystack.peek()+"End of Stack");
+//        Stack<Integer> mystack=new Stack<>();
+//        mystack.push(1);
+//        mystack.push(17);
+//        mystack.push(14);
+//        mystack.push(19);
+//        mystack.push(10);
+//        System.out.println(mystack.pop());
+//        System.out.println(mystack.peek()+"End of Stack");
+//
+//        Queue<Integer> myQueue=new LinkedList<>();
+//        myQueue.offer(1);//same as add,only difference
+//        //is it returns null
+//        myQueue.add(5);
+//        System.out.println(myQueue.poll());
+//        myQueue.offer(7);
+//        myQueue.offer(9);
+//        System.out.println(myQueue.remove());//poll returns null,remove exception
+//        System.out.println(myQueue.peek());
+//        System.out.println(myQueue.element()+"End of Queue");//element and peek again same,
+//        // but peek only returns null
+//
+//        Deque<Integer> myDeque=new LinkedList<>();
+//        myDeque.offerFirst(1);
+//        myDeque.offer(5);
+//        myDeque.offer(9);
+//        myDeque.offerLast(11);
+//        myDeque.offerFirst(0);
+//        System.out.println(myDeque.poll());
+//        System.out.println(myDeque.pollLast());
+//        System.out.println(myDeque.peek());
+//        System.out.println(myDeque.peekLast()+"End of Deque");
+//
+//        BlockingQueue<Integer> myBQ=new LinkedBlockingQueue<>();
+//        myBQ.offer(1);
+//        System.out.println(myBQ.peek());
+        PriorityQueue<Task> myPQ=new PriorityQueue<>(Comparator.comparingInt(t->t.priority));
+        myPQ.offer(new Task("Email",1));
+        myPQ.offer(new Task("Notes",5));
+        myPQ.offer(new Task("Messages",3));
+        myPQ.offer(new Task("Text",4));
+        myPQ.offer(new Task("Image",2));
 
-        Queue<Integer> myQueue=new LinkedList<>();
-        myQueue.offer(1);//same as add,only difference
-        //is it returns null
-        myQueue.add(5);
-        System.out.println(myQueue.poll());
-        myQueue.offer(7);
-        myQueue.offer(9);
-        System.out.println(myQueue.remove());//poll returns null,remove exception
-        System.out.println(myQueue.peek());
-        System.out.println(myQueue.element()+"End of Queue");//element and peek again same,
-        // but peek only returns null
-
-        Deque<Integer> myDeque=new LinkedList<>();
-        myDeque.offerFirst(1);
-        myDeque.offer(5);
-        myDeque.offer(9);
-        myDeque.offerLast(11);
-        myDeque.offerFirst(0);
-        System.out.println(myDeque.poll());
-        System.out.println(myDeque.pollLast());
-        System.out.println(myDeque.peek());
-        System.out.println(myDeque.peekLast()+"End of Deque");
-
-        BlockingQueue<Integer> myBQ=new LinkedBlockingQueue<>();
-        myBQ.offer(1);
-        System.out.println(myBQ.peek());
+        while(!myPQ.isEmpty()){
+            System.out.println(myPQ.poll());
+        }
     }
-
-
-
+    public static class Task{
+        public String name;
+        public int priority;
+        public Task(String name,int priority){
+            this.name=name;
+            this.priority=priority;
+        }
+        @Override
+        public String toString() {
+            return name+ " Priority: " + priority;
+        }
+    }
 }
 
 
