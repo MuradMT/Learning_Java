@@ -1,5 +1,7 @@
 
+import java.sql.SQLOutput;
 import java.text.SimpleDateFormat;
+import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
@@ -23,7 +25,10 @@ public class Main {
          offerFirst or Last,poll and peek also
          4.Blocking queue works in publisher-subscriber principle
          locks threads
-         5.Priority Queue is based on prorities
+         5.Priority Queue is based on priorities
+         In java,priority queue acts by default for Integers
+         as min heap,
+         if we use Comparator.reverseOrder it becomes maxHeap
      */
     //endregion
 
@@ -63,16 +68,36 @@ public class Main {
 //        BlockingQueue<Integer> myBQ=new LinkedBlockingQueue<>();
 //        myBQ.offer(1);
 //        System.out.println(myBQ.peek());
-        PriorityQueue<Task> myPQ=new PriorityQueue<>(Comparator.comparingInt(t->t.priority));
-        myPQ.offer(new Task("Email",1));
-        myPQ.offer(new Task("Notes",5));
-        myPQ.offer(new Task("Messages",3));
-        myPQ.offer(new Task("Text",4));
-        myPQ.offer(new Task("Image",2));
-
-        while(!myPQ.isEmpty()){
-            System.out.println(myPQ.poll());
+//        PriorityQueue<Task> myPQ=new PriorityQueue<>(Comparator.comparingInt(t->t.priority));
+//        myPQ.offer(new Task("Email",1));
+//        myPQ.offer(new Task("Notes",5));
+//        myPQ.offer(new Task("Messages",3));
+//        myPQ.offer(new Task("Text",4));
+//        myPQ.offer(new Task("Image",2));
+//
+//        while(!myPQ.isEmpty()){
+//            System.out.println(myPQ.poll());
+//        }
+        PriorityQueue<Integer> minHeap=new PriorityQueue<>();
+        minHeap.offer(1);
+        minHeap.offer(2);
+        minHeap.offer(3);
+        System.out.println("MinHeap elements:");
+        Iterator<Integer> minHeapItems=minHeap.iterator();
+        while(minHeapItems.hasNext()){
+            System.out.println(minHeapItems.next());
         }
+
+        PriorityQueue<Integer> maxHeap=new PriorityQueue<>(Comparator.reverseOrder());
+        maxHeap.offer(1);
+        maxHeap.offer(2);
+        maxHeap.offer(3);
+        System.out.println("MaxHeap elements:");
+        Iterator<Integer> maxHeapItems=maxHeap.iterator();
+        while(maxHeapItems.hasNext()){
+            System.out.println(maxHeapItems.next());
+        }
+
     }
     public static class Task{
         public String name;

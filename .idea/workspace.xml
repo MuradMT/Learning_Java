@@ -9,7 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a665332-5312-4987-ad21-520016e4cb64" name="Changes" comment="Learned about Queue,Deque,BlockingQueue and specific methods such as offer(add),poll(remove) and peek(element).">
+    <list default="true" id="0a665332-5312-4987-ad21-520016e4cb64" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -343,7 +344,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749422786150</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Implemented custom Priority Queue with Comparator.">
+      <option name="closed" value="true" />
+      <created>1749423661465</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1749423661465</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -368,7 +377,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Learned about Stack,Heap,Metaspace,naming rules,Reference and value types ,instance and static relationship etc.Details is mentioned in comments." />
     <MESSAGE value="Learned about Garbage Collector(System.gc()),native keyword(JNI-Java Native Interface),HotStop JVM(JIT compiler),java and class files,JDK(javac.exe),JRE(java.exe),dll and exe topics." />
     <MESSAGE value="Learned about Pass by value topic." />
     <MESSAGE value="Looked at static object,stack overflow example withobject initiation,object array,.getClass().getName() such as c# reflection,getter setter default versions,getter record style,setter builder pattern.&#10;Encapsulation is information,Abstraction is implementation hiding." />
@@ -393,6 +401,7 @@
     <MESSAGE value="Finished month 4,moving to month 5." />
     <MESSAGE value="Learned about Stack." />
     <MESSAGE value="Learned about Queue,Deque,BlockingQueue and specific methods such as offer(add),poll(remove) and peek(element)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Learned about Queue,Deque,BlockingQueue and specific methods such as offer(add),poll(remove) and peek(element)." />
+    <MESSAGE value="Implemented custom Priority Queue with Comparator." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented custom Priority Queue with Comparator." />
   </component>
 </project>
