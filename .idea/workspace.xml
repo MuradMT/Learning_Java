@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a665332-5312-4987-ad21-520016e4cb64" name="Changes" comment="Finished month 4,moving to month 5.">
+    <list default="true" id="0a665332-5312-4987-ad21-520016e4cb64" name="Changes" comment="Learned about Stack.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -328,7 +328,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749251744375</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Learned about Stack.">
+      <option name="closed" value="true" />
+      <created>1749420781147</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1749420781147</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -353,7 +361,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Finished exercises." />
     <MESSAGE value="Learned about class and class related topics such as static,field,object.Additionally,learned about pointer vs reference differences,JVM and RAM relationship, pointer implementation in C,essential parts of computer such as mother board,case ,power supply,cpu,ram,hard drive(solid state drive ssd and hard disk drive hdd),graphics card." />
     <MESSAGE value="Learned about Stack,Heap,Metaspace,naming rules,Reference and value types ,instance and static relationship etc.Details is mentioned in comments." />
     <MESSAGE value="Learned about Garbage Collector(System.gc()),native keyword(JNI-Java Native Interface),HotStop JVM(JIT compiler),java and class files,JDK(javac.exe),JRE(java.exe),dll and exe topics." />
@@ -378,6 +385,7 @@
     <MESSAGE value="Learned about Map(HahMap,Hashtable),Collections.SynchronizedMap." />
     <MESSAGE value="Learned about TreeMap(SortedMap,),Set,HashSet,TreeSet(Red-Black tree under the hood),comparable and comparator." />
     <MESSAGE value="Finished month 4,moving to month 5." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished month 4,moving to month 5." />
+    <MESSAGE value="Learned about Stack." />
+    <option name="LAST_COMMIT_MESSAGE" value="Learned about Stack." />
   </component>
 </project>
