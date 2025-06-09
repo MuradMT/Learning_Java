@@ -29,6 +29,9 @@ public class Main {
          In java,priority queue acts by default for Integers
          as min heap,
          if we use Comparator.reverseOrder it becomes maxHeap
+         Simply Heap is priority Queue
+         6.MySql,PostgresSql,what is server all day running computer
+         7.Sql queries,mysql workbench
      */
     //endregion
 
@@ -78,27 +81,28 @@ public class Main {
 //        while(!myPQ.isEmpty()){
 //            System.out.println(myPQ.poll());
 //        }
-        PriorityQueue<Integer> minHeap=new PriorityQueue<>();
-        minHeap.offer(1);
-        minHeap.offer(2);
-        minHeap.offer(3);
-        System.out.println("MinHeap elements:");
-        Iterator<Integer> minHeapItems=minHeap.iterator();
-        while(minHeapItems.hasNext()){
-            System.out.println(minHeapItems.next());
-        }
-
-        PriorityQueue<Integer> maxHeap=new PriorityQueue<>(Comparator.reverseOrder());
-        maxHeap.offer(1);
-        maxHeap.offer(2);
-        maxHeap.offer(3);
-        System.out.println("MaxHeap elements:");
-        Iterator<Integer> maxHeapItems=maxHeap.iterator();
-        while(maxHeapItems.hasNext()){
-            System.out.println(maxHeapItems.next());
-        }
+//        PriorityQueue<Integer> minHeap=new PriorityQueue<>();
+//        minHeap.offer(1);
+//        minHeap.offer(2);
+//        minHeap.offer(3);
+//        System.out.println("MinHeap elements:");
+//        Iterator<Integer> minHeapItems=minHeap.iterator();
+//        while(minHeapItems.hasNext()){
+//            System.out.println(minHeapItems.next());
+//        }
+//
+//        PriorityQueue<Integer> maxHeap=new PriorityQueue<>(Comparator.reverseOrder());
+//        maxHeap.offer(1);
+//        maxHeap.offer(2);
+//        maxHeap.offer(3);
+//        System.out.println("MaxHeap elements:");
+//        Iterator<Integer> maxHeapItems=maxHeap.iterator();
+//        while(maxHeapItems.hasNext()){
+//            System.out.println(maxHeapItems.next());
+//        }
 
     }
+
     public static class Task{
         public String name;
         public int priority;
