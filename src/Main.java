@@ -39,6 +39,7 @@ public class Main {
          11.Charset selection such as utf8 or ascii
          We do this when we create schema
          12.Mysql has auto commit feature
+         13.Detailed joins Left Right Inner Outer Cross
      */
     //endregion
 
