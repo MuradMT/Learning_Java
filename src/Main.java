@@ -32,6 +32,13 @@ public class Main {
          Simply Heap is priority Queue
          6.MySql,PostgresSql,what is server all day running computer
          7.Sql queries,mysql workbench
+         8.Database is called schema
+         9.Tables,common sql commands such as select where etc
+         Select,Where,Update,Insert,Delete,Order By Joins etc
+         10.Keys,auto increment etc,bit type,null,blob type
+         11.Charset selection such as utf8 or ascii
+         We do this when we create schema
+         12.Mysql has auto commit feature
      */
     //endregion
 

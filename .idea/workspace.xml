@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a665332-5312-4987-ad21-520016e4cb64" name="Changes" comment="">
+    <list default="true" id="0a665332-5312-4987-ad21-520016e4cb64" name="Changes" comment="Looked at Mysql.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -360,7 +360,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749424689393</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Looked at Mysql.">
+      <option name="closed" value="true" />
+      <created>1749512349765</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1749512349765</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -385,7 +393,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Learned about Pass by value topic." />
     <MESSAGE value="Looked at static object,stack overflow example withobject initiation,object array,.getClass().getName() such as c# reflection,getter setter default versions,getter record style,setter builder pattern.&#10;Encapsulation is information,Abstraction is implementation hiding." />
     <MESSAGE value="Looked at pojo vs bean , object composition,ctor vs default ctor,ctor chain,this for chain ,this for calling and setting." />
     <MESSAGE value="Looked at to Method overloading,Wrapper types,boxing,unboxing,New object creation after the value of Integer 127 topics." />
@@ -410,6 +417,7 @@
     <MESSAGE value="Learned about Queue,Deque,BlockingQueue and specific methods such as offer(add),poll(remove) and peek(element)." />
     <MESSAGE value="Implemented custom Priority Queue with Comparator." />
     <MESSAGE value="Implemented minimum Heap and maximum Heap." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented minimum Heap and maximum Heap." />
+    <MESSAGE value="Looked at Mysql." />
+    <option name="LAST_COMMIT_MESSAGE" value="Looked at Mysql." />
   </component>
 </project>
