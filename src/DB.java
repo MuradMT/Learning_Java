@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DB {
+
       public static List<Student> getStudents()  {
           List<Student> data=new ArrayList<>();
           try(Connection connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/Learning?user=root&password=server.11")){

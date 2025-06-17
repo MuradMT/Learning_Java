@@ -60,7 +60,16 @@ public class Main {
 
     //region Lesson-35(1,2,3,4)
     /*
-
+           1.Java EE intro
+           2.Application server handles requests and gives responses
+           Request comes through TCP
+           3.Then a console app runs
+           HttpServletRequest and HttpServletResponse are main classes
+           4.App server and console apps are all in the same place,inside jvm,
+           if 1 crash happens in apps,then it means jvm crashed
+           5.WebServer is Nginx,handles requests responses
+           WebAppServices is tomcat,does whatever webserver can do,but
+           runs java apps such as servlet spring
      */
     //endregion
     //region Lesson-36(1,2)
