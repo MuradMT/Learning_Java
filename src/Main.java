@@ -41,8 +41,6 @@ public class Main {
          13.Detailed joins Left Right Inner Outer Cross
      */
     //endregion
-
-    //Not-Finished
     //region Lesson-34(1,2)
     /*
           1.Install mysql connector from java2s
@@ -57,6 +55,9 @@ public class Main {
           8.Transaction,commit,rollback
      */
     //endregion
+
+    //Not-Finished
+
     //region Lesson-35(1,2,3,4)
     /*
 
@@ -154,14 +155,15 @@ public class Main {
 //        while(maxHeapItems.hasNext()){
 //            System.out.println(maxHeapItems.next());
 //        }
-        List<Student> students = DB.getStudents();
-        Student student = DB.getStudent(1);
-        System.out.println(student);
-        System.out.println(students);
-        Student std=new Student("MyN","MyS",22);
-        boolean b = DB.addStudent(std);
-        System.out.println(b);
-        System.out.println(DB.updateStudentAge(6,236));
+//        List<Student> students = DB.getStudents();
+//        Student student = DB.getStudent(1);
+//        System.out.println(student);
+//        System.out.println(students);
+//        Student std=new Student("MyN","MyS",22);
+//        boolean b = DB.addStudent(std);
+//        System.out.println(b);
+//        System.out.println(DB.updateStudentAge(6,236));
+
     }
 
     public static class Task{
