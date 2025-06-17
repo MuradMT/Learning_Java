@@ -1,4 +1,5 @@
 
+import java.sql.SQLException;
 import java.sql.SQLOutput;
 import java.text.SimpleDateFormat;
 import java.time.Instant;
@@ -14,8 +15,6 @@ public class Main {
     //Month-5
 
     //Finished
-
-    //Not-Finished
 
     //region Lesson-33(1,2,3,4)
     /*
@@ -43,7 +42,54 @@ public class Main {
      */
     //endregion
 
-    public static void main(String[] args)  {
+    //Not-Finished
+    //region Lesson-34(1,2)
+    /*
+          1.Install mysql connector from java2s
+          2.MySql connector is a part of JDBC,
+          implemented on top of it
+          3.Shortcut-when you write .var at the end of function it returns
+          actual data type as variable
+          4.Main topics:Connection,Statement,PreparedStatement,ResultSet
+          5.Explained services and repositories
+          6.executeUpdate returns int,execute returns boolean
+          7.Talked about sql injection
+          8.Transaction,commit,rollback
+     */
+    //endregion
+    //region Lesson-35(1,2,3,4)
+    /*
+
+     */
+    //endregion
+    //region Lesson-36(1,2)
+    /*
+
+     */
+    //endregion
+    //region Lesson-37(1,2)
+    /*
+
+     */
+    //endregion
+    //region Lesson-38(1,2)
+    /*
+
+     */
+    //endregion
+    //region Lesson-39(1,2)
+    /*
+
+     */
+    //endregion
+    //region Lesson-40(1,2)
+    /*
+
+     */
+    //endregion
+
+
+    public static void main(String[] args) throws SQLException, ClassNotFoundException {
 //        Stack<Integer> mystack=new Stack<>();
 //        mystack.push(1);
 //        mystack.push(17);
@@ -108,7 +154,14 @@ public class Main {
 //        while(maxHeapItems.hasNext()){
 //            System.out.println(maxHeapItems.next());
 //        }
-
+        List<Student> students = DB.getStudents();
+        Student student = DB.getStudent(1);
+        System.out.println(student);
+        System.out.println(students);
+        Student std=new Student("MyN","MyS",22);
+        boolean b = DB.addStudent(std);
+        System.out.println(b);
+        System.out.println(DB.updateStudentAge(6,236));
     }
 
     public static class Task{
