@@ -9,10 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a665332-5312-4987-ad21-520016e4cb64" name="Changes" comment="Finished Java Standard Edition.">
+    <list default="true" id="0a665332-5312-4987-ad21-520016e4cb64" name="Changes" comment="Learned about web application server (such as tomcat) vs web server(nginx) difference,how web application server runs multiple console apps,springs servlet etc.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DB.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +49,6 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2nvEheltAed1exR9AmePiHgMhYM" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -66,10 +67,16 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/muradm/Java/Learning_Java&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -80,6 +87,14 @@
       <recent name="test" />
     </key>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26094.121" />
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-IU-251.26094.121" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -88,6 +103,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729845272220</updated>
+      <workItem from="1750175725581" duration="31000" />
+      <workItem from="1750175762672" duration="398000" />
+      <workItem from="1750782603443" duration="3078000" />
     </task>
     <task id="LOCAL-00001" summary="Learned the fundamentals of Java SE.">
       <option name="closed" value="true" />
@@ -404,6 +422,9 @@
     <option name="localTasksCounter" value="40" />
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="OPEN_GENERIC_TABS">
       <map>
@@ -426,7 +447,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Finished month 3.Topics are stringBuilder vs stringBuffer,build tools ant maven gradle jar,oop,final keyword,@override,instanceof,access modifiers,this and super keywords,unnamed class,sealed+permits or final keywords to block inheritance,inner vs nested class,class.forName,interfaces,default extend implements keywords,try catch finally,exception error throwable runtime exception,throw vs throws,checked vs unchecked exceptions and so on." />
     <MESSAGE value="All files used during month 3." />
     <MESSAGE value="Learned about monitor lock,deadlock,join,wait,notify." />
     <MESSAGE value="Learned about ReentrantLock  and Thread.sleep()." />
@@ -451,6 +471,7 @@
     <MESSAGE value="Looked at detailed Joins." />
     <MESSAGE value="Learned about JDBC API(concepts such as Connection,Statement,PreparedStatement,ResultSet),MySql connector,difference between executeUpdate and execute." />
     <MESSAGE value="Finished Java Standard Edition." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished Java Standard Edition." />
+    <MESSAGE value="Learned about web application server (such as tomcat) vs web server(nginx) difference,how web application server runs multiple console apps,springs servlet etc." />
+    <option name="LAST_COMMIT_MESSAGE" value="Learned about web application server (such as tomcat) vs web server(nginx) difference,how web application server runs multiple console apps,springs servlet etc." />
   </component>
 </project>
