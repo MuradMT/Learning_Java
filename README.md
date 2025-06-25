@@ -1,5 +1,6 @@
 <h1>I follow the JAVA course from Sarkhan Rasullu(UDEMY).</h1>
 <h2>Course link:https://www.udemy.com/course/sifirdan-sona-java-2024</h2>
+<p>in this repo i combined all essential java se,spring security and microservices notes.</p>
 Java 8 features(lambda expressions):
 
 1.foreach working in background like this:we implement consumer class and oveeride its accept method then do some actions.
