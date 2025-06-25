@@ -9,12 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a665332-5312-4987-ad21-520016e4cb64" name="Changes" comment="Learned about web application server (such as tomcat) vs web server(nginx) difference,how web application server runs multiple console apps,springs servlet etc.">
+    <list default="true" id="0a665332-5312-4987-ad21-520016e4cb64" name="Changes" comment="Learned about java 8 features such as functional interfaces,map filter foreach reduce flatmap,Optional methods,intermediate vs terminal operations difference.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Student.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +102,9 @@
       <updated>1729845272220</updated>
       <workItem from="1750175725581" duration="31000" />
       <workItem from="1750175762672" duration="398000" />
-      <workItem from="1750782603443" duration="3078000" />
+      <workItem from="1750782603443" duration="3592000" />
+      <workItem from="1750857566624" duration="17000" />
+      <workItem from="1750860941407" duration="355000" />
     </task>
     <task id="LOCAL-00001" summary="Learned the fundamentals of Java SE.">
       <option name="closed" value="true" />
@@ -419,7 +418,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750164023020</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Learned about java 8 features such as functional interfaces,map filter foreach reduce flatmap,Optional methods,intermediate vs terminal operations difference.">
+      <option name="closed" value="true" />
+      <created>1750786259319</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1750786259319</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -447,7 +454,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="All files used during month 3." />
     <MESSAGE value="Learned about monitor lock,deadlock,join,wait,notify." />
     <MESSAGE value="Learned about ReentrantLock  and Thread.sleep()." />
     <MESSAGE value="Learned about ScheduledExecutorService,Callable,invokeAll,invokeAny ." />
@@ -472,6 +478,7 @@
     <MESSAGE value="Learned about JDBC API(concepts such as Connection,Statement,PreparedStatement,ResultSet),MySql connector,difference between executeUpdate and execute." />
     <MESSAGE value="Finished Java Standard Edition." />
     <MESSAGE value="Learned about web application server (such as tomcat) vs web server(nginx) difference,how web application server runs multiple console apps,springs servlet etc." />
-    <option name="LAST_COMMIT_MESSAGE" value="Learned about web application server (such as tomcat) vs web server(nginx) difference,how web application server runs multiple console apps,springs servlet etc." />
+    <MESSAGE value="Learned about java 8 features such as functional interfaces,map filter foreach reduce flatmap,Optional methods,intermediate vs terminal operations difference." />
+    <option name="LAST_COMMIT_MESSAGE" value="Learned about java 8 features such as functional interfaces,map filter foreach reduce flatmap,Optional methods,intermediate vs terminal operations difference." />
   </component>
 </project>
